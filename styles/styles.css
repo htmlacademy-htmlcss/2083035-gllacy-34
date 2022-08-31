@@ -1,0 +1,39 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* .visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  border: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+} */
+
+html {
+  height: 100%;
+}
+
+body{
+  background-color: #feafc3;
+}
+
+.container{
+  padding: 0 98px ;
+}
+
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 1200px;
+  margin: 0 auto;
+  min-height: 100vh;
+  background-color: #feafc3;
+}
