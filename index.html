@@ -60,15 +60,15 @@
           <div class="slider-slide">
             <div class="slider-content">
               <h3 class="slider-title">Нежный пломбир <br>с клубничным джемом</h3>
-              <p class="slider-description">Натуральное мороженое из свежих сливок и молока с вкуснейшим клубничным
-                джемом– это идеальный десерт для всей семьи. </p>
+              <p class="slider-description">Натуральное мороженое из свежих сливок <br> и молока с вкуснейшим клубничным
+                джемом <br> –это идеальный десерт для всей семьи. </p>
               <a class="slider-link button-primary" href="#">Заказать</a>
             </div>
             <div class="slider-img">
               <img src="images/slider-1.png" width=" 306" height=" 507" alt="Изображение пломбира с клубничным джемом.">
             </div>
           </div>
-          <div class="slider-slide">
+          <!-- <div class="slider-slide">
             <div class="slider-content">
               <h3 class="slider-title">Сливочное мороженое со вкусом банана</h3>
               <p class="slider-description">Сливочное мороженое с ярким банановым вкусом подарит вам свежесть и
@@ -90,7 +90,7 @@
               <img src="images/slider-3.png" width=" 306" height=" 507"
                 alt="Изображение карамельного пломбира с маршмеллоу.">
             </div>
-          </div>
+          </div> -->
           <!-- Пагинация слайдов -->
           <div class="slider-pagination">
             <button class="slider-pagination-button is-active " type="button">
@@ -116,17 +116,17 @@
         <!-- Cписок соцсетей -->
         <ul class="social-list">
           <li class="social-item">
-            <a class="social-link" href="https://t.me/htmlacademy ">
+            <a class="social-link tg-link" href="https://t.me/htmlacademy ">
               <span class="visually-hidden">Телеграм.</span>
             </a>
           </li>
           <li class="social-item">
-            <a class="social-link" href="https://vk.com/htmlacademy ">
+            <a class="social-link vk-link" href="https://vk.com/htmlacademy ">
               <span class="visually-hidden">Вконтакте.</span>
             </a>
           </li>
           <li class="social-item">
-            <a class="social-link" href="https://www.youtube.com/user/htmlacademyru ">
+            <a class="social-link yt-link" href="https://www.youtube.com/user/htmlacademyru ">
               <span class="visually-hidden">Ютуб.</span>
             </a>
           </li>
@@ -231,7 +231,7 @@
       <section class="newsletter">
         <h2 class="visually-hidden">Блог и подписка на рассылку.</h2>
         <div class="blog-wrapper">
-          <h3 class="blog-titile">Новое в нашем блоге</h3>
+          <h3 class="blog-title">Новое в нашем блоге</h3>
           <h4 class="blog-subtitle">10 способов сервировки фруктовых щербетов
             к столу</h4>
         </div>
@@ -259,13 +259,11 @@
             <p class="delivery-info">Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</p>
             <form class="delivery-form" action="https://echo.htmlacademy.ru/" method="post">
               <div class="input-wrapper-one">
-                <label class="delivery-label date-label" for="date"> Дата
-                  <input class="delivery-input date-input" id="date" type="text" placeholder="01.04.2020" name="date" />
-                </label>
-                <label class="delivery-label phone-label" for="phone"> Телефон
-                  <input class="delivery-input phone-input" id="phone" type="text" placeholder="+7 800 999-00-00"
-                    name="phone" />
-                </label>
+                <label class="delivery-label date-label" for="date"> Дата </label>
+                <input class="delivery-input date-input" id="date" type="text" placeholder="01.04.2020" name="date" />
+                <label class="delivery-label phone-label" for="phone"> Телефон</label>
+                <input class="delivery-input phone-input" id="phone" type="text" placeholder="+7 800 999-00-00"
+                  name="phone" />
               </div>
               <div class="input-wrapper-two">
                 <label class="delivery-label address-label" for="address"> Адрес </label>
@@ -291,19 +289,19 @@
     </main>
     <footer class="footer">
       <!-- Cписок соцсетей -->
-      <ul class="social-list footer-social-list">
-        <li class="social-item footer-social-item">
-          <a class="social-link footer-social-link" href="https://t.me/htmlacademy ">
+      <ul class=" footer-social-list">
+        <li class="footer-social-item">
+          <a class=" footer-social-link footer-social-tg" href="https://t.me/htmlacademy ">
             <span class="visually-hidden">Телеграм.</span>
           </a>
         </li>
-        <li class="social-item footer-social-item">
-          <a class="social-link footer-social-link" href="https://vk.com/htmlacademy ">
+        <li class="footer-social-item">
+          <a class=" footer-social-link footer-social-vk" href="https://vk.com/htmlacademy ">
             <span class="visually-hidden">Вконтакте.</span>
           </a>
         </li>
-        <li class="social-item footer-social-item">
-          <a class="social-link footer-social-link" href="https://www.youtube.com/user/htmlacademyru ">
+        <li class=" footer-social-item">
+          <a class=" footer-social-link footer-social-yt" href="https://www.youtube.com/user/htmlacademyru ">
             <span class="visually-hidden">Ютуб.</span>
           </a>
         </li>
@@ -311,35 +309,36 @@
       <!-- Инфо -->
       <div class="info-wrapper">
         <h2 class="info-title" href="#">Для поставщиков</h2>
-        <a class="info-link" href="#">О производстве</a>
         <a class="info-link" href="#">Наши документы</a>
+        <a class="info-link" href="#">О производстве</a>
         <a class="info-link" href="#">Экологические стандарты</a>
       </div>
       <!-- Логотип академии -->
       <div class="footer-logo-wrapper">
         <a class="footer-logo" href="https://htmlacademy.ru">
           <span class="visually-hidden">HTML academy.</span>
-          <svg class="htmlacademy-icon" aria-hidden="true" focusable="false" viewBox="0 0 115 33" width="93" height="27" fill="none" >
+          <svg class="htmlacademy-icon" aria-hidden="true" focusable="false" viewBox="0 0 115 33" width="93" height="27"
+            fill="none">
             <g clip-path="url(#a)" fill="#2D3440">
               <path
                 d="M0 10.42v2.08h1.99v-2.08H0Zm9.42-6.76c-1.26 0-2.28.58-2.92 1.4h-.07V0H4.79v12.5h1.64V8.21c0-1.72 1.07-2.95 2.64-2.95 1.49
-                 0 2.35 1.11 2.35 2.6v4.64h1.65V7.57c0-2.38-1.47-3.9-3.65-3.9Zm12.11.24h-3.9V.88H16V3.9h-1.55v1.6H16v4.84c0 1.39.78 2.15 2.18 
+                 0 2.35 1.11 2.35 2.6v4.64h1.65V7.57c0-2.38-1.47-3.9-3.65-3.9Zm12.11.24h-3.9V.88H16V3.9h-1.55v1.6H16v4.84c0 1.39.78 2.15 2.18
                  2.15h3.36v-1.61H18.5c-.55 0-.86-.32-.86-.86V5.5h3.89V3.9Zm11.72-.22c-1.3 0-2.31.64-2.86 1.67h-.06a2.9 2.9 0 0 0-2.71-1.67c-1.14
                   0-2 .6-2.52 1.46h-.07V3.9h-1.58v8.59h1.65v-4.4c0-1.61.84-2.8 2.12-2.83 1.21-.03 1.92.83 1.92 2.14v5.1h1.64V7.95c0-1.93 1.14-2.69
-                   2.13-2.69 1.2 0 1.9.83 1.9 2.14v5.1h1.64V7.22c0-2.08-1.17-3.54-3.2-3.54Zm5.43 6.6c0 1.4.8 2.22 2.26 2.22h1.63v-1.6h-1.39c-.55 
-                   0-.86-.31-.86-.85V0h-1.64v10.28Zm-15.3 5.66h-.07a3.75 3.75 0 0 0-3.07-1.49c-2.54-.03-4.36 1.85-4.36 4.5 0 2.68 1.85 4.56 4.34 
-                   4.53a3.66 3.66 0 0 0 3.09-1.57h.07v1.33H25v-8.55h-1.62v1.25Zm-2.91 5.95a2.83 2.83 0 0 1-2.95-2.93 2.83 2.83 0 0 1 2.95-2.94c1.75 
-                   0 2.89 1.31 2.89 2.94 0 1.6-1.14 2.93-2.9 2.93Zm15.28-4.09a4.28 4.28 0 0 0-4.36-3.35 4.37 4.37 0 0 0-4.54 4.5 4.39 4.39 0 0 0 
-                   4.54 4.53 4.3 4.3 0 0 0 4.36-3.4h-1.71a2.68 2.68 0 0 1-2.63 1.83 2.84 2.84 0 0 1-2.91-2.95 2.82 2.82 0 0 1 2.9-2.94 2.7 2.7 0 0 
+                   2.13-2.69 1.2 0 1.9.83 1.9 2.14v5.1h1.64V7.22c0-2.08-1.17-3.54-3.2-3.54Zm5.43 6.6c0 1.4.8 2.22 2.26 2.22h1.63v-1.6h-1.39c-.55
+                   0-.86-.31-.86-.85V0h-1.64v10.28Zm-15.3 5.66h-.07a3.75 3.75 0 0 0-3.07-1.49c-2.54-.03-4.36 1.85-4.36 4.5 0 2.68 1.85 4.56 4.34
+                   4.53a3.66 3.66 0 0 0 3.09-1.57h.07v1.33H25v-8.55h-1.62v1.25Zm-2.91 5.95a2.83 2.83 0 0 1-2.95-2.93 2.83 2.83 0 0 1 2.95-2.94c1.75
+                   0 2.89 1.31 2.89 2.94 0 1.6-1.14 2.93-2.9 2.93Zm15.28-4.09a4.28 4.28 0 0 0-4.36-3.35 4.37 4.37 0 0 0-4.54 4.5 4.39 4.39 0 0 0
+                   4.54 4.53 4.3 4.3 0 0 0 4.36-3.4h-1.71a2.68 2.68 0 0 1-2.63 1.83 2.84 2.84 0 0 1-2.91-2.95 2.82 2.82 0 0 1 2.9-2.94 2.7 2.7 0 0
                    1 2.64 1.78h1.71Zm8.8-1.86h-.07a3.75 3.75 0 0 0-3.07-1.49c-2.54-.03-4.36 1.85-4.36 4.5 0 2.68 1.85 4.56 4.34 4.53a3.66 3.66 0 0
                     0 3.09-1.57h.07v1.33h1.62v-8.55h-1.62v1.25Zm-2.91 5.95a2.83 2.83 0 0 1-2.95-2.93 2.83 2.83 0 0 1 2.95-2.94c1.75 0 2.89 1.31 2.89
-                     2.94 0 1.6-1.14 2.93-2.9 2.93Zm13.88-5.87h-.07a3.73 3.73 0 0 0-3.08-1.57c-2.5-.03-4.35 1.85-4.35 4.52 0 2.66 1.82 4.54 4.37 
-                     4.5A3.74 3.74 0 0 0 55.43 22h.09v1.25h1.63V10.8h-1.63v5.21Zm-2.9 5.89a2.83 2.83 0 0 1-2.95-2.94 2.83 2.83 0 0 1 2.94-2.93c1.75 
-                     0 2.9 1.33 2.9 2.93a2.82 2.82 0 0 1-2.9 2.94Zm10.72-7.46a4.36 4.36 0 0 0-4.43 4.52c0 2.44 1.7 4.5 4.47 4.5 2 0 3.62-1.08 
-                     4.19-2.9h-1.71c-.39.82-1.3 1.34-2.41 1.34-1.56 0-2.67-1.04-2.79-2.37h7.08c.23-2.84-1.56-5.09-4.4-5.09Zm-.03 1.57a2.6 2.6 0 0 
+                     2.94 0 1.6-1.14 2.93-2.9 2.93Zm13.88-5.87h-.07a3.73 3.73 0 0 0-3.08-1.57c-2.5-.03-4.35 1.85-4.35 4.52 0 2.66 1.82 4.54 4.37
+                     4.5A3.74 3.74 0 0 0 55.43 22h.09v1.25h1.63V10.8h-1.63v5.21Zm-2.9 5.89a2.83 2.83 0 0 1-2.95-2.94 2.83 2.83 0 0 1 2.94-2.93c1.75
+                     0 2.9 1.33 2.9 2.93a2.82 2.82 0 0 1-2.9 2.94Zm10.72-7.46a4.36 4.36 0 0 0-4.43 4.52c0 2.44 1.7 4.5 4.47 4.5 2 0 3.62-1.08
+                     4.19-2.9h-1.71c-.39.82-1.3 1.34-2.41 1.34-1.56 0-2.67-1.04-2.79-2.37h7.08c.23-2.84-1.56-5.09-4.4-5.09Zm-.03 1.57a2.6 2.6 0 0
                      1 2.65 2.07H60.7a2.57 2.57 0 0 1 2.61-2.07Zm16.1-1.55c-1.31 0-2.32.64-2.87 1.66h-.05c-.5-1-1.44-1.66-2.72-1.66a2.9 2.9 0 0 0-2.53
-                      1.45h-.07v-1.23H69.6v8.55h1.65v-4.39c0-1.6.85-2.78 2.13-2.81 1.21-.03 1.92.83 1.92 2.12v5.08h1.65v-4.52c0-1.92 1.14-2.68 
-                      2.13-2.68 1.2 0 1.9.83 1.9 2.12v5.08h1.65v-5.25c0-2.07-1.18-3.52-3.2-3.52Zm9.09 7.4-2.94-7.18h-1.82l3.92 
+                      1.45h-.07v-1.23H69.6v8.55h1.65v-4.39c0-1.6.85-2.78 2.13-2.81 1.21-.03 1.92.83 1.92 2.12v5.08h1.65v-4.52c0-1.92 1.14-2.68
+                      2.13-2.68 1.2 0 1.9.83 1.9 2.12v5.08h1.65v-5.25c0-2.07-1.18-3.52-3.2-3.52Zm9.09 7.4-2.94-7.18h-1.82l3.92
                       9.36-.02.03c-.28.71-.59.97-1.35.97h-2.03v1.64h2.03c1.49 0 2.28-.67 2.84-2.12l3.77-9.88h-1.68l-2.72 7.18Z" />
             </g>
             <defs>
@@ -349,8 +348,8 @@
             </defs>
           </svg>
         </a>
-        <p>
-          <span class="footer-credits">Сделано в
+        <p class="footer-credits">
+          <span class="">Сделано в
             <a class="footer-link" href="https://htmlacademy.ru">.html academy</a>
             © 2021
           </span>
