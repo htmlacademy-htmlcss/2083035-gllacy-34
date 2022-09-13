@@ -56,81 +56,100 @@
       <!-- Слайдер -->
       <section class="slider">
         <h2 class="visually-hidden">Слайдер с популярными вкусами.</h2>
-        <div class=" slider-wrapper ">
-          <div class="slider-slide">
+        <div class="slider-slides">
+          <div class="slider-slide slider-slide--active" data-class="color-pink">
             <div class="slider-content">
-              <h3 class="slider-title">Нежный пломбир <br>с клубничным джемом</h3>
-              <p class="slider-description">Натуральное мороженое из свежих сливок <br> и молока с вкуснейшим клубничным
-                джемом <br> –это идеальный десерт для всей семьи. </p>
-              <a class="slider-link button-primary" href="#">Заказать</a>
+              <h3 class="slider-title">Нежный пломбир с&nbsp;клубничным джемом</h3>
+              <p class="slider-description">Натуральное мороженое из свежих сливок
+                и&nbsp;молока с вкуснейшим клубничным джемом <br> – это&nbsp;идеальный десерт для всей семьи. </p>
+              <a class="button-primary slider-link" href="#">Заказать</a>
             </div>
-            <div class="slider-img">
-              <img src="images/slider-1.png" width=" 306" height=" 507" alt="Изображение пломбира с клубничным джемом.">
+            <div class="slider-images">
+              <div class="slider-image">
+                <img src="images/slider-1.png" alt="Вафельный рожок мороженого пломбир с клубничным джемом." width="306"
+                  height="507">
+              </div>
             </div>
           </div>
-          <!-- <div class="slider-slide">
+          <div class="slider-slide" data-class="color-blue">
             <div class="slider-content">
               <h3 class="slider-title">Сливочное мороженое со вкусом банана</h3>
               <p class="slider-description">Сливочное мороженое с ярким банановым вкусом подарит вам свежесть и
                 наслаждение даже в самый жаркий летний день. </p>
-              <a class="slider-link button-primary" href="#">Заказать</a>
+              <a class="button-primary slider-link" href="#">Заказать</a>
             </div>
-            <div class="slider-img">
-              <img src="images/slider-2.png" width=" 306" height=" 507" alt="Изображение мороженого со вкусом банана.">
+            <div class="slider-images">
+              <div class="slider-image">
+                <img src="images/slider-2.png" alt="Вафельный рожок сливочного бананового мороженого." width="306"
+                  height="507">
+              </div>
             </div>
           </div>
-          <div class="slider-slide">
+          <div class="slider-slide" data-class="color-yellow">
             <div class="slider-content">
               <h3 class="slider-title">Карамельный пломбир с маршмеллоу</h3>
               <p class="slider-description">Необычный сладкий десерт с карамельным топпингом и кусочками зефира завоюет
                 сердца сладкоежек всех возрастов.</p>
-              <a class="slider-link button-primary" href="#">Заказать</a>
+              <a class="button-primary slider-link" href="#">Заказать</a>
             </div>
-            <div class="slider-img">
-              <img src="images/slider-3.png" width=" 306" height=" 507"
-                alt="Изображение карамельного пломбира с маршмеллоу.">
+            <div class="slider-images">
+              <div class="slider-image">
+                <img src="images/slider-3.png" alt="Вафельный рожок карамельного мороженого с маршмеллоу." width="306"
+                  height="507">
+              </div>
             </div>
-          </div> -->
-          <!-- Пагинация слайдов -->
-          <div class="slider-pagination">
-            <button class="slider-pagination-button is-active " type="button">
-              <span class="visually-hidden">1 фото</span>
-            </button>
-            <button class="slider-pagination-button" type="button">
-              <span class="visually-hidden">2 фото</span>
-            </button>
-            <button class="slider-pagination-button" type="button">
-              <span class="visually-hidden">3 фото</span>
-            </button>
-          </div>
-          <!-- Стрелочки вперед/назад -->
-          <div class="buttons-wrapper">
-            <button class="slider-button previous-slide" type="button">
-              <span class=" visually-hidden">Назад</span>
-            </button>
-            <button class="slider-button next-slide" type="button">
-              <span class="visually-hidden">Вперед</span>
-            </button>
           </div>
         </div>
-        <!-- Cписок соцсетей -->
-        <ul class="social-list">
-          <li class="social-item">
-            <a class="social-link tg-link" href="https://t.me/htmlacademy ">
-              <span class="visually-hidden">Телеграм.</span>
-            </a>
-          </li>
-          <li class="social-item">
-            <a class="social-link vk-link" href="https://vk.com/htmlacademy ">
-              <span class="visually-hidden">Вконтакте.</span>
-            </a>
-          </li>
-          <li class="social-item">
-            <a class="social-link yt-link" href="https://www.youtube.com/user/htmlacademyru ">
-              <span class="visually-hidden">Ютуб.</span>
-            </a>
-          </li>
-        </ul>
+        <!-- Стерлочки слайдера -->
+        <div class="slider-toggles">
+          <button class="slider-toggle prev-slide-button" type="button">
+            <span class="visually-hidden">Предыдущий слайд.</span>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M9.803 3.805a.665.665 0 1 0-.94-.94L4.195 7.533a.665.665 0 0 0-.003.938l.004.003 4.668 4.668a.665.665 0 1 0 .94-.94L5.605 8.003l4.198-4.198Z"
+                fill="currentColor" />
+            </svg>
+          </button>
+          <button class="slider-toggle next-slide-button" type="button">
+            <span class="visually-hidden">Следующий слайд.</span>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M7.135 2.865a.665.665 0 1 0-.94.94l4.201 4.201-4.201 4.202a.665.665 0 0 0 .94.94l4.669-4.669.003-.002c.26-.26.26-.681 0-.94L7.135 2.864Z"
+                fill="currentColor" />
+            </svg>
+          </button>
+        </div>
+        <!-- Пагинация слайдера -->
+        <div class="slider-footer">
+          <div class="slider-pagination">
+            <button class="slider-pagination-button is-active" type="button">
+              <span class="visually-hidden">Первый товар.</span>
+            </button>
+            <button class="slider-pagination-button" type="button">
+              <span class="visually-hidden">Второй товар.</span>
+            </button>
+            <button class="slider-pagination-button" type="button">
+              <span class="visually-hidden">Третий товар.</span>
+            </button>
+          </div>
+          <!-- Cписок соцсетей -->
+          <ul class="social-list">
+            <li class="social-item">
+              <a class="social-link tg-link" href="https://t.me/htmlacademy ">
+                <span class="visually-hidden">Телеграм.</span>
+              </a>
+            </li>
+            <li class="social-item">
+              <a class="social-link vk-link" href="https://vk.com/htmlacademy ">
+                <span class="visually-hidden">Вконтакте.</span>
+              </a>
+            </li>
+            <li class="social-item">
+              <a class="social-link yt-link" href="https://www.youtube.com/user/htmlacademyru ">
+                <span class="visually-hidden">Ютуб.</span>
+              </a>
+            </li>
+          </ul>
       </section>
       <!-- Акции -->
       <section class="promo">
@@ -216,37 +235,41 @@
           <h2 class="advantages-title">Магазин Глейси – это онлайн и офлайн-магазин по продаже мороженого собственного
             производства на развес</h2>
           <ul class="advantages-list">
-            <li class="advantages-item">Всё наше мороженое изготавливается на собственном производстве с использованием
+            <li class="advantages-item advantages-item-one">Всё наше мороженое изготавливается на собственном производстве с использованием
               современного оборудования и проверенных временем технологий.</li>
-            <li class="advantages-item">Закупка ингредиентов производится только у проверенных фермерских хозяйств, с
+            <li class="advantages-item advantages-item-two">Закупка ингредиентов производится только у проверенных фермерских хозяйств, с
               которыми нас связывает долговременное сотрудничество.</li>
-            <li class="advantages-item">Для приготовления мороженого используются сливки и молоко высочайшего качества.
+            <li class="advantages-item advantages-item-three">Для приготовления мороженого используются сливки и молоко высочайшего качества.
               Все ингредиенты и добавки произведены из натурального сырья.</li>
-            <li class="advantages-item">Доставка нашего мороженого осуществляется в специальном термопаке, который не
+            <li class="advantages-item advantages-item-four">Доставка нашего мороженого осуществляется в специальном термопаке, который не
               даёт мороженому растаять и позволяет сохранить превосходный вкус.</li>
           </ul>
         </div>
       </section>
       <!-- Блог и подписка на рассылку -->
-      <section class="newsletter">
-        <h2 class="visually-hidden">Блог и подписка на рассылку.</h2>
-        <div class="blog-wrapper">
-          <h3 class="blog-title">Новое в нашем блоге</h3>
-          <h4 class="blog-subtitle">10 способов сервировки фруктовых щербетов
-            к столу</h4>
-        </div>
-        <h3 class="visually-hidden">Подпишитесь на рассылку.</h3>
-        <div class="newsletter-wrapper">
-          <p class="newsletter-info">Подпишитесь на нашу сладкую рассылку и будьте всегда
-            в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды.
-            Честно =)</p>
-          <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-            <input class="newsletter-input" id="email" type="email" placeholder="email@example.com" name="email"
-              required />
-            <button class="newsletter-button button-secondary" type="submit">Отправить</button>
-          </form>
-        </div>
-      </section>
+      <div class="section-wrapper">
+        <section class="blog">
+          <h2 class="visually-hidden">Блог.</h2>
+          <div class="blog-wrapper">
+            <h3 class="blog-title">Новое в нашем блоге</h3>
+            <h4 class="blog-subtitle">10 способов сервировки фруктовых щербетов
+              к столу</h4>
+          </div>
+        </section>
+        <section class="newsletter">
+          <h3 class="visually-hidden">Подпишитесь на рассылку.</h3>
+          <div class="newsletter-wrapper">
+            <p class="newsletter-info">Подпишитесь на нашу сладкую рассылку и будьте всегда
+              в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды.
+              Честно =)</p>
+            <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
+              <input class="newsletter-input" id="email" type="email" placeholder="email@example.com" name="email"
+                required />
+              <button class="newsletter-button button-secondary" type="submit">Отправить</button>
+            </form>
+          </div>
+        </section>
+      </div>
       <!-- Доставка -->
       <section class="delivery">
         <div class="delivery-wrapper">
@@ -357,6 +380,7 @@
       </div>
     </footer>
   </div>
+  <script src="js/index.js"></script>
 </body>
 
 </html>
