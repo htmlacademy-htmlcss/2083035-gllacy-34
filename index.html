@@ -21,6 +21,23 @@
         <ul class="navigation-list">
           <li class="navigation-item">
             <a class="navigation-link" href="catalog.html">Каталог</a>
+            <div class="catalog-popup">
+              <span class="catalog-popup-title">Новинки</span>
+              <ul class="catalog-popup-list">
+                <li class="catalog-popup-item">
+                  <a class="catalog-popup-link" href="catalog.html">Сливочное</a>
+                </li>
+                <li class="catalog-popup-item">
+                  <a class="catalog-popup-link" href="#">Щербеты</a>
+                </li>
+                <li class="catalog-popup-item">
+                  <a class="catalog-popup-link" href="#">Фруктовый&nbsp;лед</a>
+                </li>
+                <li class="catalog-popup-item">
+                  <a class="catalog-popup-link" href="#">Мелорин</a>
+                </li>
+              </ul>
+            </div>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">Доставка и оплата</a>
@@ -37,17 +54,71 @@
         <div class="search-wrapper">
           <button class="search-button" type="button"></button>
           <div class="search-popup">
+            <form class="search-popup-form" action="https://echo.htmlacademy.ru/" method="post">
+              <input class="search-popup-input" type="search" placeholder="Поиск по сайту">
+            </form>
           </div>
         </div>
         <!-- Кнопка войти -->
         <div class="login-wrapper">
           <button class="login-button" type="button">Вход</button>
-          <div class="login-popup"></div>
+          <div class="login-popup">
+            <h2 class="login-popup-title">Личный кабинет</h2>
+            <form class="login-popup-form" action="https://echo.htmlacademy.ru/" method="post">
+              <input class="login-popup-input" type="email" placeholder="email@example.com" required>
+              <input class="login-popup-input input-password " type="password" required>
+              <button class="login-popup-button button-secondary" type="submit">Войти</button>
+              <ul class="help-list">
+                <li>
+                  <a class="help-link " href="#">Забыли пароль?</a>
+                </li>
+                <li>
+                  <a class="help-link" href="#">Регистрация</a>
+                </li>
+              </ul>
+            </form>
+          </div>
         </div>
         <!-- Корзина -->
         <div class="basket-wrapper">
           <button class="basket-button" type="button">2 товара</button>
-          <div class="basket-popup"></div>
+          <!-- Если в корзине нет товаров, то к basket-popup добавить класс is-empty -->
+          <div class="basket-popup is-empty">
+            <h3 class="basket-title">Корзина</h3>
+            <ul class="basket-list">
+              <li class="basket-item">
+                <a class="basket-link" href="#">
+                  <img class="basket-img" src="images/catalog-card-1.png" width="46" height="46"
+                    alt="Шарик малинового мороженого.">
+                  <div class="basket-wrapper">
+                    <p class="basket-description">Малинка</p>
+                    <p class="basket-quantity">1 кг х 310 ₽</p>
+                  </div>
+                  <span class="basket-price">310 ₽</span>
+                </a>
+                <button class="basket-close-button" type="button">
+                  <span class="visually-hidden">Удалить товар из корзины.</span>
+                </button>
+              <li class="basket-item">
+                <a class="basket-link" href="#">
+                  <img class="basket-img" src="images/catalog-card-4.png" width="46" height="46"
+                    alt="Шарик мороженого бабл-гам.">
+                  <div class="basket-wrapper">
+                    <p class="basket-description">Бабл-гам</p>
+                    <span class="basket-quantity">1,5 кг х 320 ₽</span>
+                  </div>
+                  <span class="basket-price">320 ₽</span>
+                </a>
+                <button class="basket-close-button" type="button">
+                  <span class="visually-hidden">Удалить товар из корзины.</span>
+                </button>
+            </ul>
+            <div class="basket-wrapper-total ">
+              <button class="button-secondary ">Оформить заказ</button>
+              <span class="basket-price-total">Итого: 790 ₽</span>
+            </div>
+            <div class="basket-popup-empty">Ваша корзина пока пуста</div>
+          </div>
         </div>
       </div>
     </header>
@@ -235,13 +306,17 @@
           <h2 class="advantages-title">Магазин Глейси – это онлайн и офлайн-магазин по продаже мороженого собственного
             производства на развес</h2>
           <ul class="advantages-list">
-            <li class="advantages-item advantages-item-one">Всё наше мороженое изготавливается на собственном производстве с использованием
+            <li class="advantages-item advantages-item-one">Всё наше мороженое изготавливается на собственном
+              производстве с использованием
               современного оборудования и проверенных временем технологий.</li>
-            <li class="advantages-item advantages-item-two">Закупка ингредиентов производится только у проверенных фермерских хозяйств, с
+            <li class="advantages-item advantages-item-two">Закупка ингредиентов производится только у проверенных
+              фермерских хозяйств, с
               которыми нас связывает долговременное сотрудничество.</li>
-            <li class="advantages-item advantages-item-three">Для приготовления мороженого используются сливки и молоко высочайшего качества.
+            <li class="advantages-item advantages-item-three">Для приготовления мороженого используются сливки и молоко
+              высочайшего качества.
               Все ингредиенты и добавки произведены из натурального сырья.</li>
-            <li class="advantages-item advantages-item-four">Доставка нашего мороженого осуществляется в специальном термопаке, который не
+            <li class="advantages-item advantages-item-four">Доставка нашего мороженого осуществляется в специальном
+              термопаке, который не
               даёт мороженому растаять и позволяет сохранить превосходный вкус.</li>
           </ul>
         </div>
