@@ -1,3 +1,5 @@
+// Slider
+
 const slides = document.querySelectorAll('.slider-slide');
 const buttonPrev = document.querySelector('.prev-slide-button');
 const buttonNext = document.querySelector('.next-slide-button');
@@ -48,3 +50,27 @@ const initSlider = () => {
 };
 
 initSlider();
+
+
+// Modal
+
+const contactsLink = document.querySelector('.contacts-link');
+const modalCloseButton = document.querySelector('.modal-close-button');
+const modal = document.querySelector('.modal-container');
+
+contactsLink.addEventListener('click', (evt) => {
+  evt.preventDefault();
+  modal.classList.add('is-open');
+});
+
+modalCloseButton.addEventListener('click', (evt) => {
+  evt.preventDefault();
+  modal.classList.remove('is-open');
+});
+
+document.addEventListener('keydown', (evt) => {
+  if (evt.key === 'Escape') {
+    evt.preventDefault();
+    modal.classList.remove('is-open');
+  }
+});
