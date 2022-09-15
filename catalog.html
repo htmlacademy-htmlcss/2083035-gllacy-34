@@ -20,7 +20,24 @@
       <nav class="header-navigation">
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="navigation-link" href="#">Каталог</a>
+            <a class="navigation-link" href="catalog.html">Каталог</a>
+            <div class="catalog-popup">
+              <span class="catalog-popup-title">Новинки</span>
+              <ul class="catalog-popup-list">
+                <li class="catalog-popup-item">
+                  <a class="catalog-popup-link" href="catalog.html">Сливочное</a>
+                </li>
+                <li class="catalog-popup-item">
+                  <a class="catalog-popup-link" href="#">Щербеты</a>
+                </li>
+                <li class="catalog-popup-item">
+                  <a class="catalog-popup-link" href="#">Фруктовый&nbsp;лед</a>
+                </li>
+                <li class="catalog-popup-item">
+                  <a class="catalog-popup-link" href="#">Мелорин</a>
+                </li>
+              </ul>
+            </div>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">Доставка и оплата</a>
@@ -36,18 +53,73 @@
         <!-- Поиск по сайту -->
         <div class="search-wrapper">
           <button class="search-button" type="button"></button>
-          <div class="input-wrapper"></div>
+          <div class="search-popup">
+            <form class="search-popup-form" action="https://echo.htmlacademy.ru/" method="post">
+              <input class="search-popup-input" type="search" placeholder="Поиск по сайту">
+            </form>
+          </div>
         </div>
-      </div>
-      <!-- Кнопка войти -->
-      <div class="login-wrapper">
-        <button class="login-button" type="button">Вход</button>
-        <div class="login-popup"></div>
-      </div>
-      <!-- Корзина -->
-      <div class="basket-wrapper">
-        <button class="basket-button" type="button">2 товара</button>
-        <div class="basket-popup"></div>
+        <!-- Кнопка войти -->
+        <div class="login-wrapper">
+          <button class="login-button" type="button">Вход</button>
+          <div class="login-popup">
+            <h2 class="login-popup-title">Личный кабинет</h2>
+            <form class="login-popup-form" action="https://echo.htmlacademy.ru/" method="post">
+              <input class="login-popup-input" type="email" placeholder="email@example.com" required>
+              <input class="login-popup-input input-password " type="password" required>
+              <button class="login-popup-button button-secondary" type="submit">Войти</button>
+              <ul class="help-list">
+                <li>
+                  <a class="help-link " href="#">Забыли пароль?</a>
+                </li>
+                <li>
+                  <a class="help-link" href="#">Регистрация</a>
+                </li>
+              </ul>
+            </form>
+          </div>
+        </div>
+        <!-- Корзина -->
+        <div class="basket-wrapper">
+          <button class="basket-button" type="button">2 товара</button>
+          <!-- Если в корзине нет товаров, то к basket-popup добавить класс is-empty -->
+          <div class="basket-popup is-empty">
+            <h3 class="basket-title">Корзина</h3>
+            <ul class="basket-list">
+              <li class="basket-item">
+                <a class="basket-link" href="#">
+                  <img class="basket-img" src="images/catalog-card-1.png" width="46" height="46"
+                    alt="Шарик малинового мороженого.">
+                  <div class="basket-wrapper">
+                    <p class="basket-description">Малинка</p>
+                    <p class="basket-quantity">1 кг х 310 ₽</p>
+                  </div>
+                  <span class="basket-price">310 ₽</span>
+                </a>
+                <button class="basket-close-button" type="button">
+                  <span class="visually-hidden">Удалить товар из корзины.</span>
+                </button>
+              <li class="basket-item">
+                <a class="basket-link" href="#">
+                  <img class="basket-img" src="images/catalog-card-4.png" width="46" height="46"
+                    alt="Шарик мороженого бабл-гам.">
+                  <div class="basket-wrapper">
+                    <p class="basket-description">Бабл-гам</p>
+                    <span class="basket-quantity">1,5 кг х 320 ₽</span>
+                  </div>
+                  <span class="basket-price">320 ₽</span>
+                </a>
+                <button class="basket-close-button" type="button">
+                  <span class="visually-hidden">Удалить товар из корзины.</span>
+                </button>
+            </ul>
+            <div class="basket-wrapper-total ">
+              <button class="button-secondary ">Оформить заказ</button>
+              <span class="basket-price-total">Итого: 790 ₽</span>
+            </div>
+            <div class="basket-popup-empty">Ваша корзина пока пуста</div>
+          </div>
+        </div>
       </div>
     </header>
     <main class="main-container">
@@ -57,7 +129,7 @@
         <li class="breadcrumbs-item">
           <a class="breadcrumbs-link" href="index.html">Главная</a>
         </li>
-        <li>
+        <li class="breadcrumbs-item">
           <span class="breadcrumbs-link">Каталог</span>
         </li>
       </ul>
@@ -75,8 +147,9 @@
             <!-- Фильтр по цене -->
             <fieldset class="filter">
               <h3 class="filter-title">Цена: 100 ₽ – 500 ₽</h3>
-              <div class="range-scale">
-                <div class="range-bar" style="left:0; width:164px">
+              <div class="range">
+                <div class="range-scale">
+                  <div class="range-bar" style="left:25px; width:100px"></div>
                   <button class="range-toggle toggle-min" type="button">
                     <span class="visually-hidden">Изменить минимальную цену.</span>
                   </button>
@@ -314,44 +387,46 @@
         </ul>
         <!-- Пагинация -->
         <div class="pagination-wrapper">
-          <a class="pagination-button button-primary" href="#">Показать еще</a>
-          <span class="pagination-arrow"></span>
+        <a class="pagination-button button-primary" href="#">Показать еще</a>
+       <div class="pagination-container">
+          <button class="pagination-arrow arrow-backward"></button>
           <ul class="pagination-list">
             <li class="pagination-item">
-              <a class="pagination-item-link" href="#">1</a>
+              <a class="pagination-link" href="#">1</a>
             </li>
             <li class="pagination-item">
-              <a class="pagination-item-link" href="#">2</a>
+              <a class="pagination-link" href="#">2</a>
             </li>
             <li class="pagination-item">
-              <span class="pagination-item-link pagination-item-link-divider">3</span>
+              <span class="pagination-link pagination-link-divider">3</span>
             </li>
             <li class="pagination-item">
-              <a class="pagination-item-link" href="#">4</a>
+              <a class="pagination-link" href="#">4</a>
             </li>
             <li class="pagination-item">
-              <a class="pagination-item-link" href="#">5</a>
+              <a class="pagination-link" href="#">5</a>
             </li>
           </ul>
-          <span class="pagination-arrow"></span>
+          <button class="pagination-arrow  arrow-forward"></button>
         </div>
+      </div>
       </section>
     </main>
     <footer class="footer">
       <!-- Cписок соцсетей -->
       <ul class=" footer-social-list">
         <li class="footer-social-item">
-          <a class=" footer-social-link" href="https://t.me/htmlacademy ">
+          <a class=" footer-social-link footer-social-tg" href="https://t.me/htmlacademy ">
             <span class="visually-hidden">Телеграм.</span>
           </a>
         </li>
         <li class="footer-social-item">
-          <a class=" footer-social-link" href="https://vk.com/htmlacademy ">
+          <a class=" footer-social-link footer-social-vk" href="https://vk.com/htmlacademy ">
             <span class="visually-hidden">Вконтакте.</span>
           </a>
         </li>
         <li class=" footer-social-item">
-          <a class=" footer-social-link" href="https://www.youtube.com/user/htmlacademyru ">
+          <a class=" footer-social-link footer-social-yt" href="https://www.youtube.com/user/htmlacademyru ">
             <span class="visually-hidden">Ютуб.</span>
           </a>
         </li>
