@@ -193,8 +193,14 @@ img {
 
 .button-primary.loader::before,
 .button-primary.loader:hover::before {
-  border: 2px solid rgba(36, 36, 36, 0.24);
+  border: 2px solid rgba(36, 36, 36, 0.25);
   border-bottom-color: #242424;
+}
+
+.button-secondary.loader::before,
+.button-secondary.loader:hover::before {
+  border: 2px solid rgba(252, 252, 252, 0.25);
+  border-bottom-color: #fcfcfc;
 }
 
 /* Secondary button light*/
@@ -395,7 +401,6 @@ img {
   color: #fcfcfc;
 }
 
-
 /* Catalog popup */
 
 .catalog-popup {
@@ -507,7 +512,6 @@ img {
   z-index: 1;
   fill: #2d3440;
 }
-
 
 .search-popup {
   position: absolute;
@@ -749,8 +753,8 @@ login-popup-title {
   box-shadow: 0 0 0 2px #2d3440;
 }
 
-/* Для отображения пустой корзины свойству display поменять значение на none.
-По умолчанию отображается состояние, когда корзина полная. */
+/* По умолчанию отображается состояние, когда корзине есть товар.
+Для отображения пустой корзины свойству display поменять значение на none.*/
 
 .basket-wrapper:focus-within .basket-popup {
   display: block;
@@ -984,12 +988,12 @@ login-popup-title {
 }
 
 .slider-img {
-  padding: 29px 21px 21px 27px;
   position: relative;
-  align-items: center;
-  transform: scale(0.3);
   display: flex;
   flex-direction: column;
+  align-items: center;
+  padding: 29px 21px 21px 27px;
+  transform: scale(0.3);
 }
 
 .slider-img img {
@@ -1447,7 +1451,6 @@ login-popup-title {
   background-position: -2px -103px;
   border-radius: 16px;
   background-size: 113%;
-  background-color: #ffffff;
 }
 
 .blog-title {
@@ -1756,9 +1759,8 @@ login-popup-title {
   font-size: 14px;
 }
 
-.contacts-link {
-  display: inline-flex;
-  text-decoration: none;
+.contacts-button {
+  max-width: 250px;
 }
 
 /* Footer */
@@ -1767,7 +1769,7 @@ login-popup-title {
   display: grid;
   grid-template-columns: 220px 356px 220px;
   column-gap: 185px;
-  padding: 44px 0;
+  padding: 48px 0 57px 0;
 }
 
 .catalog-footer {
@@ -2064,6 +2066,7 @@ login-popup-title {
   text-decoration: none;
   font-size: 14px;
   line-height: 20px;
+  font-weight: 700;
   color: #2D3440;
 }
 
@@ -2251,20 +2254,14 @@ login-popup-title {
   border-radius: 50%;
 }
 
-.radio-input:hover+.radio-mark {
+.radio-input:hover+.radio-mark,
+.radio-input:focus+.radio-mark {
   border: 1px solid #fcfcfc;
 }
 
-.radio-input:hover+.radio-mark::before {
-  background-color: #fcfcfc;
-}
-
-.radio-input:focus+.radio-mark {
-  opacity: 0.7;
-}
-
+.radio-input:hover+.radio-mark::before,
 .radio-input:focus+.radio-mark::before {
-  opacity: 0.7;
+  background-color: #fcfcfc;
 }
 
 .radio-input:disabled+.radio-mark {
@@ -2286,7 +2283,7 @@ login-popup-title {
   flex-wrap: wrap;
   min-width: 604px;
   margin: 0;
-  padding: 10px 27px 5px 24px;
+  padding: 12px 27px 3px 24px;
   background-color: rgba(252, 252, 252, 0.3);
   border-radius: 18px;
   list-style-type: none;
@@ -2326,20 +2323,14 @@ login-popup-title {
   background-image: url('../images/checkbox.svg');
 }
 
-.checkbox-input:hover+.control-mark {
+.checkbox-input:hover+.control-mark,
+.checkbox-input:focus+.control-mark {
   background-image: url('../images/checkbox-white-empty.svg');
 }
 
-.checkbox-input:checked:hover+.control-mark {
+.checkbox-input:checked:hover+.control-mark,
+.checkbox-input:checked:focus+.control-mark {
   background-image: url('../images/checkbox-white.svg');
-}
-
-.checkbox-input:focus+.control-mark {
-  opacity: 0.7;
-}
-
-.checkbox-input:focus:hover+.control-mark {
-  opacity: 0.7;
 }
 
 .checkbox-input:disabled+.control-mark {
@@ -2358,7 +2349,7 @@ login-popup-title {
 /* Catalog product */
 
 .catalog {
-  padding: 43px 0;
+  padding: 43px 0 39px 0;
 }
 
 .catalog-list {
@@ -2384,7 +2375,7 @@ login-popup-title {
 
 .catalog-img {
   position: absolute;
-  top: -45px;
+  top: -44px;
   left: 50%;
   transform: translateX(-50%) scale(1.16);
 }

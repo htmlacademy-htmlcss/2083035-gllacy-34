@@ -11,7 +11,7 @@
 
 <body>
   <div class="page-wrapper">
-    <!--К кнопкам или ссылкам ввиде кнопок добавить класс loader, чтобы увидеть спиннер-->
+    <!--Для отображения сосотояния загрузки кнопкам или ссылкам ввиде кнопок добавить класс loader -->
     <header class="page-header">
       <!-- Логотип -->
       <a class="header-logo" href="#">
@@ -56,6 +56,7 @@
         <!-- Поиск по сайту -->
         <div class="search-wrapper">
           <button class=" header-button search-button" type="button">
+            <span class="visually-hidden">Поиск по сайту.</span>
             <svg width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd"
                 d="M1.66 6.19a4.67 4.67 0 1 1 9.34 0 4.67 4.67 0 0 1-9.34 0Zm8.42 4.69a6 6 0 1 1 .94-.94l2.45 2.44a.67.67 0 1 1-.94.95l-2.45-2.45Z" />
@@ -113,7 +114,7 @@
             </svg>
           </button>
           <!-- Чтобы увидеть разные всплывающие окна у корзины перейдите на 752 строку styles.css
-             и измените значения свойств display на противоположные -->
+             и измените значения свойств display -->
           <div class="basket-popup">
             <h3 class="basket-title">Корзина</h3>
             <ul class="basket-list">
@@ -167,7 +168,7 @@
               <button class="slide-button button-primary" type="button">Заказать</button>
             </div>
             <div class="slider-img">
-              <img src="images/slider-1.png" alt="Клубничное мороженое в рожке." width="306" height="507">
+              <img src="images/slider-1.png" width="306" height="507" alt="Клубничное мороженое в рожке.">
             </div>
           </div>
           <div class="slider-slide" data-class="color-blue">
@@ -178,7 +179,7 @@
               <button class="slide-button button-primary" type="button">Заказать</button>
             </div>
             <div class="slider-img">
-              <img src="images/slider-2.png" alt="Банановое мороженое в рожке." width="306" height="507">
+              <img src="images/slider-2.png" width="306" height="507" alt="Банановое мороженое в рожке.">
             </div>
           </div>
           <div class="slider-slide" data-class="color-yellow">
@@ -189,11 +190,12 @@
               <button class="slide-button button-primary" type="button">Заказать</button>
             </div>
             <div class="slider-img">
-              <img src="images/slider-3.png" alt="Карамельное мороженое в рожке." width="306" height="507">
+              <img src="images/slider-3.png" width="306" height="507" alt="Карамельное мороженое в рожке.">
             </div>
           </div>
         </div>
         <div class="slider-footer">
+          <!-- Стрелочки переключения слайдов -->
           <div class="slider-toggles">
             <button class="slider-toggle prev-slider-button" type="button">
               <span class="visually-hidden">Предыдущий слайд.</span>
@@ -436,7 +438,7 @@
             <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
               <label class="visually-hidden" for="newsletter-email">Введите свой email.</label>
               <!-- Для отображения ошибки ввода, добавить тегу input класс is-error -->
-              <input class="newsletter-input "  type="email" placeholder="email@example.com" name="email"
+              <input class="newsletter-input " type="email" placeholder="email@example.com" name="email"
                 id="newsletter-email" required>
               <button class="newsletter-button button-secondary" type="submit">Отправить</button>
             </form>
@@ -449,8 +451,7 @@
           <div class="delivery-content-one">
             <h2 class="delivery-title">Доставка любимого мороженого на дом</h2>
             <p class="delivery-description">Хочется полакомиться любимым десертом,<br> но нет времени съездить в
-              магазин?
-              Закажите доставку мороженого на дом, и курьер привезёт вам ваш заказ в течение часа!</p>
+              магазин? Закажите доставку мороженого на дом, и курьер привезёт вам ваш заказ в течение часа!</p>
           </div>
           <div class="delivery-content-two">
             <p class="delivery-info">Укажите адрес и дату доставки, и мы свяжемся <br>с вами, чтобы подтвердить заказ.
@@ -498,7 +499,7 @@
           <p class="contacts-info">Для заказов по телефону:</p>
           <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
           <p class="contacts-info-two">(с 10 до 20 ежедневно)</p>
-          <a class="contacts-link button-secondary" href="#">Форма обратной связи</a>
+          <button class="contacts-button button-secondary" type="button">Форма обратной связи</button>
         </div>
       </section>
     </main>

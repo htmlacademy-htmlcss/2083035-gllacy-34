@@ -51,10 +51,9 @@ const initSlider = () => {
 
 initSlider();
 
-
 // Modal
 
-const contactsLink = document.querySelector('.contacts-link');
+const contactsLink = document.querySelector('.contacts-button');
 const modalCloseButton = document.querySelector('.modal-close-button');
 const modal = document.querySelector('.modal-container');
 
