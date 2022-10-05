@@ -137,16 +137,16 @@
                     alt="Шарик мороженого бабл-гам.">
                   <div class="basket-order-wrapper">
                     <p class="basket-description">Бабл-гам</p>
-                    <span class="basket-quantity">1,5 кг х 320 ₽</span>
+                    <span class="basket-quantity">1,5 кг х 480 ₽</span>
                   </div>
-                  <span class="basket-price">320 ₽</span>
+                  <span class="basket-price">480 ₽</span>
                 </a>
                 <button class="basket-close-button" type="button">
                   <span class="visually-hidden">Удалить товар из корзины.</span>
                 </button>
             </ul>
             <div class="basket-wrapper-total ">
-              <button class="button-secondary ">Оформить заказ</button>
+              <button class="basket-order-button button-secondary ">Оформить заказ</button>
               <span class="basket-price-total">Итого: 790 ₽</span>
             </div>
           </div>
@@ -278,7 +278,8 @@
           <article class="article">
             <div class="article-content">
               <h3 class="article-title">Маршмеллоу даром!</h3>
-              <p class="article-description">При покупке 2 кг пломбира добавим в ваш заказ упаковку нежных зефирок
+              <p class="article-description">При покупке 2 кг пломбира добавим <br> в ваш заказ упаковку нежных <br>
+                зефирок
                 совершенно бесплатно.</p>
               <a class="article-link button-primary " href="#">Хочу подарок</a>
             </div>
@@ -466,13 +467,14 @@
                   </span>
                 </div>
                 <!-- Для отображения ошибки ввода, добавить тегу input класс is-error -->
-                <input class="delivery-input date-input" id="date" type="text" placeholder="01.04.2020" name="date">
+                <input class="delivery-input date-input" id="date" type="text" placeholder="01.04.2020" name="date"
+                  required>
               </div>
               <div class="input-wrapper phone-wrapper">
                 <label class="delivery-label phone-label" for="phone"> Телефон</label>
                 <!-- Для отображения ошибки ввода, добавить тегу input класс is-error -->
                 <input class="delivery-input phone-input" id="phone" type="text" placeholder="+7 800 999-00-00"
-                  name="phone">
+                  name="phone" required>
               </div>
               <div class="input-wrapper address-wrapper">
                 <div class="label-wrapper">
@@ -484,7 +486,7 @@
                 </div>
                 <!-- Для отображения ошибки ввода, добавить тегу input класс is-error -->
                 <input class="delivery-input address-input" id="address" type="text"
-                  placeholder="ул. Большая Конюшенная, 19/8" name="address">
+                  placeholder="ул. Большая Конюшенная, 19/8" name="address" required>
               </div>
               <button class="delivery-button button-secondary" type="submit">Отправить</button>
             </form>
@@ -547,10 +549,14 @@
       </ul>
       <!-- Инфо -->
       <div class="info-wrapper">
-        <h2 class="info-title">Для поставщиков</h2>
-        <a class="info-link" href="#">Наши документы</a>
-        <a class="info-link" href="#">О производстве</a>
-        <a class="info-link" href="#">Экологические стандарты</a>
+        <div class="info-column-one">
+          <h2 class="info-title">Для поставщиков</h2>
+          <a class="info-link" href="#">О производстве</a>
+        </div>
+        <div class="info-column-two">
+          <a class="info-link" href="#">Наши документы</a>
+          <a class="info-link" href="#">Экологические стандарты</a>
+        </div>
       </div>
       <!-- Логотип академии -->
       <div class="footer-logo-wrapper">
@@ -606,13 +612,14 @@
           <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
             <!-- Для отображения ошибки ввода, добавить тегу input класс is-error -->
             <label class="visually-hidden" for="name">Введите вашу фамилию и имя.</label>
-            <input class="modal-input modal-name" type="text" placeholder="Имя и фамилия" name="name" id="name">
+            <input class="modal-input modal-name" type="text" placeholder="Имя и фамилия" name="name" id="name"
+              required>
             <label class="visually-hidden" for="modal-email">Введите ваш email.</label>
             <input class="modal-input modal-email" type="email" placeholder="email@example.com" name="email"
               id="modal-email" required>
             <label class="visually-hidden" for="modal-appeal">Введите свое сообщение.</label>
             <textarea class="modal-input modal-appeal" placeholder="В свободной форме" name="appeal" rows="6"
-              style="height:149px" id="modal-appeal"></textarea>
+              style="height:149px" id="modal-appeal" required></textarea>
             <button class=" modal-button button-secondary">Отправить</button>
           </form>
         </section>
